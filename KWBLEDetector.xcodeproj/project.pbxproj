@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC706C2F2001EB0F008492B6 /* KWBLEDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC706C252001EB0F008492B6 /* KWBLEDetector.framework */; };
+		AC706C342001EB0F008492B6 /* KWBLEDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC706C332001EB0F008492B6 /* KWBLEDetectorTests.swift */; };
+		AC706C362001EB0F008492B6 /* KWBLEDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = AC706C282001EB0F008492B6 /* KWBLEDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC706C402001EB31008492B6 /* KWBLECentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC706C3F2001EB31008492B6 /* KWBLECentral.swift */; };
+		AC8D89C220026F5400FA12B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D89C120026F5400FA12B6 /* AppDelegate.swift */; };
+		AC8D89C420026F5400FA12B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D89C320026F5400FA12B6 /* ViewController.swift */; };
+		AC8D89C720026F5400FA12B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D89C520026F5400FA12B6 /* Main.storyboard */; };
+		AC8D89C920026F5400FA12B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8D89C820026F5400FA12B6 /* Assets.xcassets */; };
+		AC8D89CC20026F5400FA12B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D89CA20026F5400FA12B6 /* LaunchScreen.storyboard */; };
+		AC8D89D12002723000FA12B6 /* KWBLEDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC706C252001EB0F008492B6 /* KWBLEDetector.framework */; };
+		AC8D89D22002723000FA12B6 /* KWBLEDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC706C252001EB0F008492B6 /* KWBLEDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC706C302001EB0F008492B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC706C1C2001EB0F008492B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC706C242001EB0F008492B6;
+			remoteInfo = KWBLEDetector;
+		};
+		AC8D89D32002723000FA12B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC706C1C2001EB0F008492B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC706C242001EB0F008492B6;
+			remoteInfo = KWBLEDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC8D89D52002723000FA12B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC8D89D22002723000FA12B6 /* KWBLEDetector.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC706C252001EB0F008492B6 /* KWBLEDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KWBLEDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC706C282001EB0F008492B6 /* KWBLEDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWBLEDetector.h; sourceTree = "<group>"; };
+		AC706C292001EB0F008492B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC706C2E2001EB0F008492B6 /* KWBLEDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWBLEDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC706C332001EB0F008492B6 /* KWBLEDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWBLEDetectorTests.swift; sourceTree = "<group>"; };
+		AC706C352001EB0F008492B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC706C3F2001EB31008492B6 /* KWBLECentral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWBLECentral.swift; sourceTree = "<group>"; };
+		AC8D89BF20026F5400FA12B6 /* KWBLEDetector_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWBLEDetector_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8D89C120026F5400FA12B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC8D89C320026F5400FA12B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC8D89C620026F5400FA12B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC8D89C820026F5400FA12B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC8D89CB20026F5400FA12B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC8D89CD20026F5400FA12B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC706C212001EB0F008492B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC706C2B2001EB0F008492B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC706C2F2001EB0F008492B6 /* KWBLEDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8D89BC20026F5400FA12B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8D89D12002723000FA12B6 /* KWBLEDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC706C1B2001EB0F008492B6 = {
+			isa = PBXGroup;
+			children = (
+				AC706C272001EB0F008492B6 /* KWBLEDetector */,
+				AC706C322001EB0F008492B6 /* KWBLEDetectorTests */,
+				AC8D89C020026F5400FA12B6 /* KWBLEDetector_Demo */,
+				AC706C262001EB0F008492B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC706C262001EB0F008492B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC706C252001EB0F008492B6 /* KWBLEDetector.framework */,
+				AC706C2E2001EB0F008492B6 /* KWBLEDetectorTests.xctest */,
+				AC8D89BF20026F5400FA12B6 /* KWBLEDetector_Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC706C272001EB0F008492B6 /* KWBLEDetector */ = {
+			isa = PBXGroup;
+			children = (
+				AC706C282001EB0F008492B6 /* KWBLEDetector.h */,
+				AC706C292001EB0F008492B6 /* Info.plist */,
+				AC706C3F2001EB31008492B6 /* KWBLECentral.swift */,
+			);
+			path = KWBLEDetector;
+			sourceTree = "<group>";
+		};
+		AC706C322001EB0F008492B6 /* KWBLEDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC706C332001EB0F008492B6 /* KWBLEDetectorTests.swift */,
+				AC706C352001EB0F008492B6 /* Info.plist */,
+			);
+			path = KWBLEDetectorTests;
+			sourceTree = "<group>";
+		};
+		AC8D89C020026F5400FA12B6 /* KWBLEDetector_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D89C120026F5400FA12B6 /* AppDelegate.swift */,
+				AC8D89C320026F5400FA12B6 /* ViewController.swift */,
+				AC8D89C520026F5400FA12B6 /* Main.storyboard */,
+				AC8D89C820026F5400FA12B6 /* Assets.xcassets */,
+				AC8D89CA20026F5400FA12B6 /* LaunchScreen.storyboard */,
+				AC8D89CD20026F5400FA12B6 /* Info.plist */,
+			);
+			path = KWBLEDetector_Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AC706C222001EB0F008492B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC706C362001EB0F008492B6 /* KWBLEDetector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AC706C242001EB0F008492B6 /* KWBLEDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC706C392001EB0F008492B6 /* Build configuration list for PBXNativeTarget "KWBLEDetector" */;
+			buildPhases = (
+				AC706C202001EB0F008492B6 /* Sources */,
+				AC706C212001EB0F008492B6 /* Frameworks */,
+				AC706C222001EB0F008492B6 /* Headers */,
+				AC706C232001EB0F008492B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KWBLEDetector;
+			productName = KWBLEDetector;
+			productReference = AC706C252001EB0F008492B6 /* KWBLEDetector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC706C2D2001EB0F008492B6 /* KWBLEDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC706C3C2001EB0F008492B6 /* Build configuration list for PBXNativeTarget "KWBLEDetectorTests" */;
+			buildPhases = (
+				AC706C2A2001EB0F008492B6 /* Sources */,
+				AC706C2B2001EB0F008492B6 /* Frameworks */,
+				AC706C2C2001EB0F008492B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC706C312001EB0F008492B6 /* PBXTargetDependency */,
+			);
+			name = KWBLEDetectorTests;
+			productName = KWBLEDetectorTests;
+			productReference = AC706C2E2001EB0F008492B6 /* KWBLEDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC8D89BE20026F5400FA12B6 /* KWBLEDetector_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8D89D020026F5400FA12B6 /* Build configuration list for PBXNativeTarget "KWBLEDetector_Demo" */;
+			buildPhases = (
+				AC8D89BB20026F5400FA12B6 /* Sources */,
+				AC8D89BC20026F5400FA12B6 /* Frameworks */,
+				AC8D89BD20026F5400FA12B6 /* Resources */,
+				AC8D89D52002723000FA12B6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC8D89D42002723000FA12B6 /* PBXTargetDependency */,
+			);
+			name = KWBLEDetector_Demo;
+			productName = KWBLEDetector_Demo;
+			productReference = AC8D89BF20026F5400FA12B6 /* KWBLEDetector_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC706C1C2001EB0F008492B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = cracktheterm;
+				TargetAttributes = {
+					AC706C242001EB0F008492B6 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					AC706C2D2001EB0F008492B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AC8D89BE20026F5400FA12B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC706C1F2001EB0F008492B6 /* Build configuration list for PBXProject "KWBLEDetector" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC706C1B2001EB0F008492B6;
+			productRefGroup = AC706C262001EB0F008492B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC706C242001EB0F008492B6 /* KWBLEDetector */,
+				AC706C2D2001EB0F008492B6 /* KWBLEDetectorTests */,
+				AC8D89BE20026F5400FA12B6 /* KWBLEDetector_Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC706C232001EB0F008492B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC706C2C2001EB0F008492B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8D89BD20026F5400FA12B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8D89CC20026F5400FA12B6 /* LaunchScreen.storyboard in Resources */,
+				AC8D89C920026F5400FA12B6 /* Assets.xcassets in Resources */,
+				AC8D89C720026F5400FA12B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC706C202001EB0F008492B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC706C402001EB31008492B6 /* KWBLECentral.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC706C2A2001EB0F008492B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC706C342001EB0F008492B6 /* KWBLEDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8D89BB20026F5400FA12B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8D89C420026F5400FA12B6 /* ViewController.swift in Sources */,
+				AC8D89C220026F5400FA12B6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC706C312001EB0F008492B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC706C242001EB0F008492B6 /* KWBLEDetector */;
+			targetProxy = AC706C302001EB0F008492B6 /* PBXContainerItemProxy */;
+		};
+		AC8D89D42002723000FA12B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC706C242001EB0F008492B6 /* KWBLEDetector */;
+			targetProxy = AC8D89D32002723000FA12B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC8D89C520026F5400FA12B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8D89C620026F5400FA12B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC8D89CA20026F5400FA12B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8D89CB20026F5400FA12B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC706C372001EB0F008492B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC706C382001EB0F008492B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC706C3A2001EB0F008492B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G62233X968;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KWBLEDetector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cracktheterm.KWBLEDetector;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC706C3B2001EB0F008492B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G62233X968;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KWBLEDetector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cracktheterm.KWBLEDetector;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC706C3D2001EB0F008492B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G62233X968;
+				INFOPLIST_FILE = KWBLEDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cracktheterm.KWBLEDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC706C3E2001EB0F008492B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G62233X968;
+				INFOPLIST_FILE = KWBLEDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cracktheterm.KWBLEDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC8D89CE20026F5400FA12B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G62233X968;
+				INFOPLIST_FILE = KWBLEDetector_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cracktheterm.KWBLEDetector-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC8D89CF20026F5400FA12B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G62233X968;
+				INFOPLIST_FILE = KWBLEDetector_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cracktheterm.KWBLEDetector-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC706C1F2001EB0F008492B6 /* Build configuration list for PBXProject "KWBLEDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC706C372001EB0F008492B6 /* Debug */,
+				AC706C382001EB0F008492B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC706C392001EB0F008492B6 /* Build configuration list for PBXNativeTarget "KWBLEDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC706C3A2001EB0F008492B6 /* Debug */,
+				AC706C3B2001EB0F008492B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC706C3C2001EB0F008492B6 /* Build configuration list for PBXNativeTarget "KWBLEDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC706C3D2001EB0F008492B6 /* Debug */,
+				AC706C3E2001EB0F008492B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8D89D020026F5400FA12B6 /* Build configuration list for PBXNativeTarget "KWBLEDetector_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8D89CE20026F5400FA12B6 /* Debug */,
+				AC8D89CF20026F5400FA12B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC706C1C2001EB0F008492B6 /* Project object */;
+}
