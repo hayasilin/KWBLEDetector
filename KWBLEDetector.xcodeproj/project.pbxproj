@@ -18,6 +18,7 @@
 		AC8D89CC20026F5400FA12B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D89CA20026F5400FA12B6 /* LaunchScreen.storyboard */; };
 		AC8D89D12002723000FA12B6 /* KWBLEDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC706C252001EB0F008492B6 /* KWBLEDetector.framework */; };
 		AC8D89D22002723000FA12B6 /* KWBLEDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC706C252001EB0F008492B6 /* KWBLEDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF830442006618600638C64 /* KWBLEDeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF830432006618600638C64 /* KWBLEDeviceListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		AC8D89C820026F5400FA12B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC8D89CB20026F5400FA12B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC8D89CD20026F5400FA12B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF830432006618600638C64 /* KWBLEDeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWBLEDeviceListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				AC706C282001EB0F008492B6 /* KWBLEDetector.h */,
 				AC706C292001EB0F008492B6 /* Info.plist */,
 				AC706C3F2001EB31008492B6 /* KWBLECentral.swift */,
+				ACF830432006618600638C64 /* KWBLEDeviceListViewController.swift */,
 			);
 			path = KWBLEDetector;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF830442006618600638C64 /* KWBLEDeviceListViewController.swift in Sources */,
 				AC706C402001EB31008492B6 /* KWBLECentral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

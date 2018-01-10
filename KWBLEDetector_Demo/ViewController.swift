@@ -8,66 +8,28 @@
 
 import UIKit
 import KWBLEDetector
-import CoreBluetooth
 
-class ViewController: UIViewController, KWBLEDetectorProtocol {
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    let bleDetector = KWBLECentral()
-    
-    var peripherals = [CBPeripheral]()
+class ViewController: UIViewController {
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        bleDetector.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
     }
     
-    func didUpdateState(_ kwBleCentral: KWBLECentral, _ central: CBCentralManager)
+    @IBAction func showBLEList(_ sender: UIButton)
     {
-        if central.state == .poweredOn
-        {
-            print("power on")
-        }
+        let kwBLEVC = KWBLEDeviceListViewController()
+        kwBLEVC.showBleDeviceList()
     }
     
-    func didDiscoverPeripherals(_ kwBleCentral: KWBLECentral, _ peripheral: CBPeripheral)
-    {
-        if !peripherals.contains(peripheral)
-        {
-            peripherals.append(peripheral)
-        }
-        
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-}
-
-extension ViewController: UITableViewDelegate, UITableViewDataSource
-{
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return peripherals.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        let peripheral = peripherals[indexPath.row]
-        
-        cell.textLabel?.text = peripheral.name
-        
-        return cell
-    }
 }
 
 

@@ -18,37 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KS7-0c-ivl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="5yf-DM-5bR">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5yf-DM-5bR" id="ODd-r7-13v">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB8-mb-IVb">
+                                <rect key="frame" x="21" y="177" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show ble device list"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hah-W9-hfr"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1bR-1X-GKX"/>
+                                    <action selector="showBLEList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTt-KN-tid"/>
                                 </connections>
-                            </tableView>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="KS7-0c-ivl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9VK-BB-S3u"/>
-                            <constraint firstItem="KS7-0c-ivl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FgI-rs-qa2"/>
-                            <constraint firstItem="KS7-0c-ivl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LSh-Vz-Alp"/>
-                            <constraint firstItem="KS7-0c-ivl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wcR-8t-PlV"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="KS7-0c-ivl" id="4Z5-8B-RIF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
