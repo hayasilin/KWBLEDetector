@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KWBLEDetector"
-  s.version      = "1.1"
+  s.version      = "1.3"
   s.summary      = "A quick tool to create in-app KWBLEDetector."
 
   s.description  = <<-DESC
