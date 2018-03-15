@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     {
         let kwBLEVC = KWBLEDeviceListViewController()
         kwBLEVC.showBleDeviceList()
+//        self.present(kwBLEVC.returnBleDeviceList(), animated: true, completion: nil)
     }
     
     

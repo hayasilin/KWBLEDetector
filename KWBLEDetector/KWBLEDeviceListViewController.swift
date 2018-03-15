@@ -36,6 +36,11 @@ public class KWBLEDeviceListViewController: UIViewController, UITableViewDelegat
         topVC?.present(self, animated: true, completion: nil)
     }
     
+    public func returnBleDeviceList() -> UIViewController {
+        view.addSubview(tableView)
+        return self
+    }
+    
     public func didUpdateState(_ kwBleCentral: KWBLECentral, _ central: CBCentralManager)
     {
         if central.state == .poweredOn
